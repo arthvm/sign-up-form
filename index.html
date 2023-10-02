@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sign Up+</title>
 </head>
 
@@ -11,31 +12,31 @@
     <div class="content">
         <div class="side-header">
             <h1 class="page-title">Sign Up+</h1>
-            <img src="" alt="Generic sign up illustration">
+            <img src="./src/signup-img.png" alt="Generic sign up illustration" class="signup-img">
             <h2 class="legend">Sign Up+ now to sign up to a page</h2>
         </div>
         <div class="form-container">
-            <form action="#" method="post">
+            <form class="form">
                 <h2 class="form-title">Sign Up</h2>
 
-                <label for="user_name"></label>
-                <input type="text" id="user_name" name="user-name" placeholder="Full Name">
+                <div class="inputs">
+                    <label for="user_name"></label>
+                    <input type="text" id="user_name" name="user-name" placeholder="Full Name">
+                    <label for="user_email"></label>
+                    <input type="email" id="user_email" name="user-email" placeholder="Email">
+                    <label for="user_phone"></label>
+                    <input type="tel" id="user_phone" name="user-phone" placeholder="Phone Number">
+                    <label for="user_password"></label>
+                    <input type="password" id="user_password" name="user-password" placeholder="Password">
+                    <label for="password_confirm"></label>
+                    <input type="password" id="password_confirm" name="password-confirm" placeholder="Confirm Password">
+                </div>
 
-                <label for="user_email"></label>
-                <input type="email" id="user_email" name="user-email" placeholder="Email">
-
-                <label for="user_phone"></label>
-                <input type="tel" id="user_phone" name="user-phone" placeholder="Phone Number">
-
-                <label for="user_password"></label>
-                <input type="password" id="user_password" name="user-password" placeholder="Password">
-
-                <label for="password_confirm"></label>
-                <input type="password" id="password_confirm" name="password-confirm" placeholder="Confirm Password">
+                <button type="submit" class="submit-btn">Create Account</button>
             </form>
 
             <p class="login-text">Already have an account?
-                <a href="" target="_blank">Login Now!</a>
+                <a href="https://youtu.be/a3Z7zEc7AXQ?si=EB3k7tQhw3pLeae_" target="_blank">Login Now!</a>
             </p>
         </div>
     </div>
