@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
 :root {
   --header-background-color: #b93841;
   --header-text-color: #e7e7e7;
@@ -10,6 +12,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 .content {
@@ -65,6 +71,7 @@ input {
   border: 0;
   border-bottom: 1px solid black;
   height: 30px;
+  width: 300px;
   font-size: 18px;
 }
 
@@ -80,8 +87,44 @@ input:focus {
   margin-left: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 300px;
+  gap: 20px;
+  width: 800px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.error-container {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.error-msg {
+  color: var(--form-background-color);
+}
+
+.error-msg.active {
+  color: var(--header-background-color);
+  font-weight: bolder;
+}
+
+.password-requirements {
+  color: var(--header-text-color);
+  font-size: 14px;
+  margin-left: 40px;
+}
+
+.requirement.valid {
+  color: green;
+}
+
+.requirement.invalid {
+  color: var(--header-background-color);
 }
 
 .submit-btn {

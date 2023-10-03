@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a5cb30fd77.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Sign Up+</title>
 </head>
@@ -20,16 +21,50 @@
                 <h2 class="form-title">Sign Up</h2>
 
                 <div class="inputs">
-                    <label for="user_name"></label>
-                    <input type="text" id="user_name" name="user-name" placeholder="Full Name">
-                    <label for="user_email"></label>
-                    <input type="email" id="user_email" name="user-email" placeholder="Email">
-                    <label for="user_phone"></label>
-                    <input type="tel" id="user_phone" name="user-phone" placeholder="Phone Number">
-                    <label for="user_password"></label>
-                    <input type="password" id="user_password" name="user-password" placeholder="Password">
-                    <label for="password_confirm"></label>
-                    <input type="password" id="password_confirm" name="password-confirm" placeholder="Confirm Password">
+                    <div class="input-container">
+                        <i class="fa-solid fa-user" style="color: #e7e7e7;"></i>
+                        <label for="user_name"></label>
+                        <input type="text" id="user_name" name="user-name" placeholder="Full Name"
+                            pattern="^(\w\w+)\s(\w+)$" required>
+                        <!-- <div class="error-container">
+                            <i class="fa-solid fa-triangle-exclamation" style="color: #b93841;"></i>
+                            <p class="error-msg">Invalid Name Format</p>
+                        </div> -->
+                    </div>
+                    <div class="input-container">
+                        <i class="fa-solid fa-envelope" style="color: #e7e7e7;"></i>
+                        <label for="user_email"></label>
+                        <input type="email" id="user_email" name="user-email" placeholder="Email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    </div>
+                    <div class="input-container">
+                        <i class="fa-solid fa-phone" style="color: #e7e7e7;"></i>
+                        <label for="user_phone"></label>
+                        <input type="tel" id="user_phone" name="user-phone" placeholder="Phone Number (Optional)"
+                            pattern="[\+]\d{2}[\(]\d{2}[\)]\d{5}[\-]\d{4}">
+                    </div>
+                    <div class="input-container">
+                        <i class="fa-solid fa-lock" style="color: #e7e7e7;"></i>
+                        <label for="user_password"></label>
+                        <input type="password" id="user_password" name="user-password" placeholder="Password"
+                            minlength="6" required>
+                    </div>
+
+                    <div class="password-requirements">
+                        <ul>
+                            <li class="requirement">Must have at least 6 characters</li>
+                            <li class="requirement">Must have both upper-case and lower-case letters</li>
+                            <li class="requirement">Must have at least one number</li>
+                            <li class="requirement">Must have at least one special character</li>
+                        </ul>
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa-solid fa-lock" style="color: #e7e7e7;"></i>
+                        <label for="password_confirm"></label>
+                        <input type="password" id="password_confirm" name="password-confirm"
+                            placeholder="Confirm Password" required>
+                    </div>
                 </div>
 
                 <button type="submit" class="submit-btn">Create Account</button>
