@@ -1,7 +1,7 @@
 const inputs = document.querySelectorAll("input");
 const formBtn = document.querySelector(".submit-btn");
 
-const nameRGX = /^(\w\w+)\s(\w+)$/;
+const nameRGX = /^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,}$/;
 const emailRGX = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
 const passRGX =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
