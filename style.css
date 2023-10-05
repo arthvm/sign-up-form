@@ -142,6 +142,10 @@ input.invalid {
   background-color: var(--submit-btn-background);
 }
 
+.submit-btn.active {
+  background-color: var(--header-background-color);
+}
+
 .submit-btn:active {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
 }
